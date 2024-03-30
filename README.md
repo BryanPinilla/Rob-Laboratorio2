@@ -9,3 +9,11 @@ Se creó una cuadrícula para que el robot siguiera un patrón programado, la ac
 Hay dos funciones de paletizado pletizado_z y paletizado_s, la primera hace que el robot siga el patrón en las casillas 1,2,3,4,5,6,7,8 y 9 en ese orden y la segunda hace que el robot siga el patrón en las casillas 1,2,3,6,5,4,7,8 y 9 en ese orden.
 
 En el caso de las funciones Go, Move y Jump solo fue necesario usa la función Go pues el encargado aconsejó que así fuera pues las trayectorias realizadas con esta función son curvas, mientras que las trayectorias realizadas con la función Move son lineales lo que implica una mayor cantidad de cálculos y posibles singularidades en el robot, en el caso de la función Jump no se usó pues esta no existía para el modelo de robot que fue utilizado por lo que se reemplazó por la orden "Go Pallet(1, i) :Z(200)" que se encuentra en los ciclos For para que el robot se posicionara sobre una de las casillas y bajara 20 centímetros y luego volviera a subir (demostrado en los videos adjuntos). 
+
+Video de simulación en EPSON RC+ 7.0
+
+https://drive.google.com/file/d/1iuL3BfE0eLkczx13oLniuagG-NU6PdGE/view?usp=sharing
+
+Video de la implementación en el robot real
+
+https://drive.google.com/file/d/1Fh0fPCz1uqgjSnOF9MU6ybtJufNZRp9w/view?usp=sharing
